@@ -95,10 +95,11 @@
 
 ![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN_confusion_matrix_task_1_2.jpg)
 
-Для данной CM для модели CNN ситуацию лучше, чем у CIFARCNN. Некоторые классы также продолжают путаться, но уже меньше (н, с классами 5 и 3 ситуацию улучшилась).
+Для данной CM для модели CNNWithResidual без рег. ситуацию лучше, чем у CIFARCNN. Некоторые классы также продолжают путаться, но уже меньше (н, с классами 5 и 3 ситуацию улучшилась).
 
 - CM для CNNWithResidual с регуляризации.
 
 ![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN-Regularized_confusion_matrix_task_1_2.jpg)
 
+Для данной CM для модели CNN с рег. ситуация хуже, чем у модели без рег. Класс 3 путается с классом 6 (176) и с классом 5 (164).
 
