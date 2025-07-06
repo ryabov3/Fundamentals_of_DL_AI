@@ -61,6 +61,44 @@
 
 ![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/task_1_2_train_time.jpg)
 
-На данном скриншоте видно, что быстрее всех обучилась модель CIFARCNN, а медлнее всех CNNWithResidual с регуляризацией.
+На данном скриншоте видно, что быстрее всех обучилась модель CIFARCNN, а медленее всех CNNWithResidual с регуляризацией.
 
-3. 
+3. Анализ переобучения
+
+- Графики функции потерь и точности CIFARCNN:
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CIFARCNN_curves_task_1_2.jpg)
+
+Переобучение CIFARCNN началось примерно после 9 эпохи. Именно после этой эпохи val_loss начало стагнировать или расти, что является признаком переобучения.
+
+- Графики функции потерь и точности для CNNWithResidual без регуляризации:
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN_curves_task_1_2.jpg)
+
+Переобучение CNNWithResidual без регуляризации началось примерно после 4 эпохи. Именно после этой эпохи val_loss начало стагнировать или расти, что является признаком переобучения.
+
+- Графики функции потерь и точности для CNNWithResidual с регуляризацией:
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN-Regularized_curves_task_1_2.jpg)
+
+Несмотря на скачки, данная модель не подверглась переобучению. Val_loss стабильно уменьшается вместе с train loss.
+
+4. Визуализация confustion matrix.
+
+- CM для CIFARCNN:
+
+ ![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CIFARCNN_confusion_matrix_task_1_2.jpg)
+
+ Данная CM показывает высокую точность модели CIFARCNN, невзирая на то, что некоторые классы могут путаться (н, класс 5 и класс 3).
+
+ - CM для CNNWithResidual без регуляризации.
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN_confusion_matrix_task_1_2.jpg)
+
+Для данной CM для модели CNN ситуацию лучше, чем у CIFARCNN. Некоторые классы также продолжают путаться, но уже меньше (н, с классами 5 и 3 ситуацию улучшилась).
+
+- CM для CNNWithResidual с регуляризации.
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN-Regularized_confusion_matrix_task_1_2.jpg)
+
+
