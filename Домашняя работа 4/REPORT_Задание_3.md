@@ -12,3 +12,13 @@
 - Сравнение кастомного сверточного слоя со стандартными:
 
 ![image](https://github.com/user-attachments/assets/07f64b6a-9003-471e-aed9-2dbff33230b2)
+
+- Сравнение кастомной функции потерь со стандартными relu и sigmoid.
+
+![image](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/swish_task_3_1.jpg)
+
+- Сравнение кастомного пулинга с MaxPool и AvgPool.
+
+![image](https://github.com/user-attachments/assets/21e19c17-d8b4-4635-8623-3b8fb2a6f463)
+
+## 3.2. Эксперименты с Residual блоками
