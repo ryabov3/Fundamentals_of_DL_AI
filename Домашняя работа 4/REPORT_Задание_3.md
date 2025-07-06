@@ -55,6 +55,12 @@
 - **На память**:
   - Bottleneck на 25% эффективнее basic по использованию памяти
 
+#### 4. Стабильность обучения.
+
+![Image apt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/blocks_performance_comparison_task_3_2.jpg)
+
+
+
 
 
 
