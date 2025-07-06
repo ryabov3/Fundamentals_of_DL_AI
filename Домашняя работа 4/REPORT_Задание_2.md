@@ -120,3 +120,29 @@
  2) Deep модель показывает медленный рост нормы, что может сигнализировать о проблемах с исчезающими градиентами в глубокой сети без Residual блоков.
  3) CNNWithResidual демонстрирует наибольший рост нормы градиентов к поздним эпохам, что объясняет её эффективность за счет улучшенного потока градиентов через остаточные соединения, позволяя модели лучше обучаться и достигать высокой точности.
 
+#### 4. Почему Residual связи эффективнее?
+
+* Преодоление проблемы исчезающих градиентов;
+* Улучшенная способность к обучению;
+* Оптимизация глубины;
+* Баланс между скоростью и производительностью.
+
+#### 5. Визуализация feature maps для каждой модели.
+
+- FM для модели Small (2 слоя):
+
+![Image apt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/Small%20(2%20%D1%81%D0%BB%D0%BE%D1%8F)_feature_maps_task_2_2.jpg)
+
+- FM для модели Medium (4 слоя):
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/Medium%20(4%20%D1%81%D0%BB%D0%BE%D1%8F)_feature_maps_task_2_2.jpg)
+
+- FM для модели Deep (6 слоев):
+
+![Image apt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/Deep%20(6%20%D1%81%D0%BB%D0%BE%D0%B5%D0%B2)_feature_maps_task_2_2.jpg)
+
+- FM для CNNWithResidual:
+
+![Image apt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNNWithResidual_feature_maps_task_2_2.jpg)
+
+  
