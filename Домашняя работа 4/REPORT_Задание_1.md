@@ -56,3 +56,11 @@
 ![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/CNN-Regularized_curves_task_1_2.jpg)
 
 По данному графику можно сделать вывод, что точность модели росла до ~5 эпохи, а потом с различными скачками начала стагнировать.
+
+- Время обучения каждой модели:
+
+![Image alt](https://github.com/ryabov3/Fundamentals_of_DL_AI/blob/main/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204/plots/task_1_2_train_time.jpg)
+
+На данном скриншоте видно, что быстрее всех обучилась модель CIFARCNN, а медлнее всех CNNWithResidual с регуляризацией.
+
+3. 
